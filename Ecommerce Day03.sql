@@ -100,3 +100,12 @@ select * from Emp_Kanpur where salary not between 40000 and 42000
 select * from Emp_Kanpur where salary is null
 select * from Emp_Kanpur where salary is not null
 
+
+select * from Emp_Kanpur where name like 'A%'
+select * from Emp_Kanpur where name like '%a%'
+
+select * from Emp_Kanpur where name like 'NI[EO]T'
+
+select name, city, salary from Emp_Kanpur where city like '[an]%'
+
+select * from Emp_Lucknow where exists (select * from Emp_Kanpur where Emp_Lucknow.salary=Emp_Kanpur.salary)
