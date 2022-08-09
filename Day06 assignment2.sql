@@ -4,7 +4,6 @@ use flightmanagement
 select*from employee
 
 --EMPLOYEE TABLE--
-
 create table employee(emp_id int PRIMARY KEY IDENTITY(1001,1), emp_name nvarchar(30), Department nvarchar(20))
 insert into employee values ('Mahesh Kumar','IT')
 insert into employee values ('Suresh Goel','Attendant')
@@ -14,7 +13,6 @@ insert into employee values ('Jaspreet Makol','Management')
 
 --TICKET BOOKING-
 select * from ticket
-drop table ticket
 create table ticket(t_id int PRIMARY KEY IDENTITY(2001,1), t_time nvarchar(30), Cost int)
 
 insert into ticket values (19, '8000')
@@ -40,10 +38,7 @@ insert into flight values('Kingfisher', 'Goa', 'Dehradun',2004)
 insert into flight values('Kingfisher', 'Delhi', 'Hyderabad',2005)
 
 --CUTOMER TABLE--
-
 select * from customer
-drop table customer
-
 create table customer(c_id int PRIMARY KEY IDENTITY(9000,1), c_name nvarchar(30), Phone_no nvarchar(20), f_id int, t_id int,
 CONSTRAINT fk_ticket1_t_id
 FOREIGN KEY (t_id)
@@ -59,11 +54,7 @@ insert into customer values('Daksh Khanna',9910065175,702,2003)
 insert into customer values('Aryaman Pasricha',9811319212,703,2004)
 insert into customer values('Manzar Ahmed',9711999212,704,2005)
 
-
-
 -- STORAGE PROCEDURE--
-
-
 create procedure sp_flight1_customer
 as
 begin
