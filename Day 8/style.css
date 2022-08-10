@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+    color: rgb(47, 255, 109);
+}
+
+.cards{
+    width: 400px;
+    height: max-content;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.content{
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+.img1{
+    background-image: url("img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    padding: 0;
+}
+
+.img2{
+    background-image: url("img2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    padding: 0;
+}
+
+.img3{
+    background-image: url("img3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    padding: 0;
+}
+
+.cards:hover{
+    box-shadow: 1px 1px 15px 2px rgb(184, 185, 185)
+}
