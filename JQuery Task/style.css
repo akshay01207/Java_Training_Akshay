@@ -1,0 +1,13 @@
+#draggable {
+    width: 100px; 
+    height: 100px; 
+    padding: 0.5em; 
+    background:#7fffd4;
+    display:flex;
+    align-items: center;
+} 
+
+   .ui-menu {  
+       width: 200px; 
+      
+    }  
