@@ -3,20 +3,24 @@ package com.bhavna.exception;
 import java.util.Scanner;
 
 public class Age {
-	
-	 public static void checkAge(){
-		  Scanner sc=new Scanner(System.in); 
-		  System.out.print ("Enter your age: ");
-		  int age=sc.nextInt();
-		  Age obj=new Age();
+       public void check() {
+            try {
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Enter your age : ");
+                int age = sc.nextInt();
+                if(age < 19) {
+                    throw new InvalidAgeException("Invalid age Exception");
+                }
+                else {
+                    System.out.println("Age is valid");
+                }
+            }
+            catch(Exception e) {
+                System.out.println(e);
+            }
+        }
 
-		  obj.checkAge (age);
 
-		  sc.close();
-	  }
 
-	private void checkAge(int age) {
-		// TODO Auto-generated method stub
-		
-	}
+
 }
