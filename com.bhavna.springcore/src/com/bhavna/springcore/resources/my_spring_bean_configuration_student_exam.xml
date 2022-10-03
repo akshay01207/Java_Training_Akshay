@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="student" class="com.bhavna.springcore.bean.Student">
+		<property name="rollno" value="101"></property>
+		<property name="name" value="Bhavana"></property>
+		<property name="salary" value="10000"></property>
+	</bean>
+	
+	<bean id="exam" class="com.bhavna.springcore.bean.Exam">
+        <property name="eId" value="51"></property>
+        <property name="name" value="Arpit"></property>
+        <property name="marks" value="100"></property>
+    </bean>
+	
+	<bean id="studentNew" class="com.bhavna.springcore.bean.StudentNew">
+		<property name="rollno" value="102"></property>
+		<property name="name" value="Bhavana"></property>
+		<property name="salary" value="10000"></property>
+		<property name="exam" value="IIT"></property>
+	</bean>
+	
+	<bean id="ExamNew" class="com.bhavna.springcore.bean">
+		<property name="rollNo" value="101"></property>
+		<property name="name" value="Bhavana"></property>
+		<property name="salary" value="10000"></property>
+	</bean>
+</beans>

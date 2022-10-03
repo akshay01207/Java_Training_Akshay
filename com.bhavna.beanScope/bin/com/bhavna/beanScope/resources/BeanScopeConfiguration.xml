@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- <bean id="student" class="com.bhavna.beanScope.bean.Student">
+		<property name="rollno" value="101"></property>
+		<property name="name" value="Bhavana"></property>
+		<property name="salary" value="10000"></property>
+	</bean> -->
+	
+	<!-- <bean id="stud" class="com.bhavna.beanScope.bean.Student">
+		<constructor-arg value = " 102"></constructor-arg>
+		<constructor-arg value = " akshay"></constructor-arg>
+		<constructor-arg value = " 40000"></constructor-arg>
+	</bean> -->
+	
+	<bean id="stud" class="com.bhavna.beanScope.bean.Student">
+		<property name="rollno" value = " 102"></property>
+		<property name="name" value = " akshay"></property>
+		<property name="salary" value = " 40000"></property>
+		<property name="branches">
+		
+			<list>
+				<value>Delhi</value>
+				<value>noida</value>
+				<value>Gzb</value>
+			</list>
+		</property>
+	</bean>
+	
+	
+	
+	
+	<!-- <bean id="exam" class="com.bhavna.beanScope.bean.Student">
+        <property name="eId" value="111"></property>
+        <property name="name" value="akshay"></property>
+        <property name="marks" value="100"></property>
+    </bean> -->
+   </beans>
